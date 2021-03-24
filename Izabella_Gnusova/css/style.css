@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Times New Roman", Times, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: rgb(235, 223, 211);
+}
+/* ------------------------/header/------------------------ */
+
+.intro {
+    width: auto;
+    background: url(../img/forest.jpg) center center / cover no-repeat;
+    color: #fff;
+}
+
+section {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: radial-gradient(
+        circle,
+        rgba(134, 132, 132, 1) 27%,
+        rgba(157, 153, 153, 1) 72%
+    ); */
+}
+
+.header__subname {
+    text-align: center;
+    font-weight: 300;
+    font-size: 23px;
+    margin-left: 130px;
+}
+
+.header__name {
+    margin-right: 150px;
+    font-size: 50px;
+    font-family: "Rhythmic RUS";
+}
+
+.header__name::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    background: #eeeff2;
+    position: absolute;
+    left: 480px;
+    top: 22px;
+}
+
+.header__name::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100px;
+    background: #eeeff2;
+    position: absolute;
+    right: 480px;
+    top: 22px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.contacts__tel a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contacts__social {
+    text-align: center;
+}
+
+.contacts__social-img {
+    width: 30px;
+    margin: 5px 5px;
+    height: 30px;
+}
+/* ------------------------------/subheader/-------------------- */
+
+.subheader {
+    width: 100%;
+    font-size: 20px;
+    background: #000;
+    padding: 0 50px;
+}
+
+.subheader__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subheader__li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.subheader__li a:hover {
+    color: #c45824;
+}
+
+hr {
+    background: #000;
+    color: #000;
+    border: 1px solid #000;
+}
+/* -----------------------------/main/---------------------------- */
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: 62.5%;
+    margin-top: 5px;
+}
+
+.content__main-img {
+    width: 900px;
+    max-height: 500px;
+}
+
+.content__main-text {
+    background: #000;
+    text-align: initial;
+    margin-top: 6px;
+    padding: 20px;
+    color: #fff;
+    font-size: 17px;
+    border: 2px solid #c45824;
+}
+
+/* --------------------------/aside/----------------------- */
+
+aside {
+    width: 27.5%;
+}
+
+.aside__block {
+    margin-top: 5px;
+    text-align: center;
+    border: 2px solid #c45824;
+    background: #000;
+    color: #fff;
+}
+
+.aside__block-img {
+    width: 80%;
+    max-height: 200px;
+}
+
+.aside__block-text {
+    text-align: left;
+    padding: 10px;
+    color: #fff;
+}
+
+.aside__block-more {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.aside__block-more a {
+    color: #fff;
+}
+
+.aside__block-more a:hover {
+    color: #c45824;
+}
+
+/* ---------------------------/article/------------------------- */
+
+.article__main {
+    margin-top: 20px;
+}
+
+.article__header {
+    text-align: center;
+}
+/* ----------------------/slider/----------------- */
+.main__name {
+    margin-top: 100px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.main__name-img {
+    width: 450px;
+    max-height: 190px;
+}
+
+.main__name-a {
+    text-decoration: none;
+    color: #000;
+}
+
+.slider {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+/* ------------------------------/footer/------------------- */
+
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+}
+
+.footer__text span {
+    padding-top: 18px;
+    max-height: 100px;
+    margin-left: 20px;
+    display: flex;
+}
+
+@font-face {
+    font-family: "Rhythmic RUS";
+    src: url(../fonts/rhythmic/Rhythmic-RUS.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
